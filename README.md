@@ -5,10 +5,10 @@ If a new user or commpany access the webpage this application provides you to re
 Existing user can login to display their profile details and can visit the company site.
 
 Once the user is logged in 
-  >(1) User Name,
-  >(2) Profile Picture,
-  >(3) Job Role,
-  >(4) Company Name
+  >(1) User Name,\
+  >(2) Profile Picture,\
+  >(3) Job Role,\
+  >(4) Company Name\
  
 Then the Company Page consist of
   >>(1) Company Name,
