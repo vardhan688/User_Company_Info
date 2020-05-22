@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 
 app = Flask(__name__)
-
+app.secret_key = 'mysecret'
 app.config['MONGO_DBNAME'] = 'mongologin'
 app.config['MONGO_URI'] = 'mongodb+srv://vardhan688:12345@cluster0-ais0n.mongodb.net/test?retryWrites=true&w=majority'
 #client = MongoClient("mongodb+srv://vardhan688:Wantmylife11@cluster0-ais0n.mongodb.net/test?retryWrites=true&w=majority")
@@ -95,5 +95,4 @@ def register_company():
     return render_template('register_company.html')
 
 if __name__ == '__main__':
-    app.secret_key = 'mysecret'
     app.run(debug=True)
