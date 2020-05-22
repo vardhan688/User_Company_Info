@@ -21,6 +21,7 @@ def index():
 
 @app.route('/companyDetail/<username>')
 def companyDetail(username):
+    print(url_for('companyDetail', username= username))
     companies = mongo.db.companies
     users = mongo.db.users
     session['username'] = username
