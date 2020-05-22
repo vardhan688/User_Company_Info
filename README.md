@@ -1,5 +1,5 @@
 # User_Company_Info
-This application is developed in Python by use of flask web framework and data are managed  using MongoDB 
+This application is developed in Python by use of flask web framework and data are managed  using MongoDB. 
 
 If a new user or commpany access the webpage this application provides you to register users and companies.
 Existing user can login to display their profile details and can visit the company site.
