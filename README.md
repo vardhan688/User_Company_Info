@@ -11,10 +11,10 @@ Once the user is logged in
   >(4) Company Name
  
 Then the Company Page consist of
-  >>(1) Company Name,\
-  >>(2) Company logo,\
-  >>(3) Company Address,\
-  >>(4) Active Users,\
-  >>(5) Total Views
+  >(1) Company Name,\
+  >(2) Company logo,\
+  >(3) Company Address,\
+  >(4) Active Users,\
+  >(5) Total Views
   
 these details will be displayed in their corresponding web pages
