@@ -7,15 +7,14 @@ app = Flask(__name__)
 app.secret_key = 'mysecret'
 app.config['MONGO_DBNAME'] = 'mongologin'
 app.config['MONGO_URI'] = 'mongodb+srv://vardhan688:12345@cluster0-ais0n.mongodb.net/test?retryWrites=true&w=majority'
-#client = MongoClient("mongodb+srv://vardhan688:Wantmylife11@cluster0-ais0n.mongodb.net/test?retryWrites=true&w=majority")
-#db = client["mongologin"]
+
 mongo = PyMongo(app)
 allCurrentUsers=[]
 
 @app.route('/')
 def index():
     if 'username' in session:
-        return 'You are logged in as ' + session['username']
+        session.pop('user', None)
 
     return render_template('index.html')
 
@@ -49,6 +48,7 @@ def file(filename):
 def userDetail(username):
     users = mongo.db.users
     login_user = users.find_one({'name' : username})
+    login_user['username'] = username 
     return render_template('user.html', login_user = login_user)
 
 @app.route('/login', methods=['POST'])
