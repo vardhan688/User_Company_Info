@@ -6,9 +6,9 @@ Existing user can login to display their profile details and can visit the compa
 
 Once the user is logged in 
   >(1) User Name,
-  >>(2) Profile Picture,
-  >>>(3) Job Role,
-  >>>>(4) Company Name
+  >(2) Profile Picture,
+  >(3) Job Role,
+  >(4) Company Name
  
 Then the Company Page consist of
   >>(1) Company Name,
