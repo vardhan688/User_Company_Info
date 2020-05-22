@@ -1,0 +1,19 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h1>User Detail</h1>
+
+            <body>
+                <img src="{{ url_for('file', filename=login_user['profileimgName']) }}" alt="Profile Pic" width="200" height="200"><br><br>
+                <p><b>Name:</b> {{ login_user['username'] }}</p><br>
+                <p><b>Job Role:</b> {{ login_user['jobRole'] }}</p><br>
+                <p>
+                    <b>Company Name:</b> {{ login_user['companyName'] }}
+                    <a href="{{ url_for('companyDetail', username = login_user['username'] ) }}"> Visit Site</a>
+                </p><br>
+            </body>
+        </div>
+    </div>
+</div>
+{% endblock %}

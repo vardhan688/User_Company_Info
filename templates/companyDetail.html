@@ -1,0 +1,16 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h1>Company Detail</h1>
+            <tr>
+                <img src="{{ url_for('file', filename=company['logoImgName']) }}" alt="Company Logo" width="200" height="200"><br><br>
+                <th><b>Company Name:</b> {{ company['companyName'] }}</th><br>
+                <th><b>Address:</b> {{ company['address'] }}</th><br>
+                <th><b>Active Users:</b> {{ company['activeUsers'] }}</th><br>
+                <th><b>Total Views:</b> {{ company['totalViews'] }}</th>
+            </tr>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form method=POST action="{{ url_for('register_user') }}" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <lable for="jobRole"><b>Job Role</b></lable>
+                    <input type="text" class="form-control" name="role" placeholder="Job Role" required>
+                </div>
+                <div class="form-group">
+                    <lable for="companyName"><b>Company Name</b></lable>
+                    <input type="text" class="form-control" name="cname" placeholder="Company Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="myfile">Select the profile picture:</label>
+                    <input type="file" class="form-control" name="profile_img" required>
+                </div><br>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
